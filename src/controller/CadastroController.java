@@ -35,7 +35,7 @@ public class CadastroController implements ICadastroController {
 				Pessoa aux = new Pessoa();
 				aux=(Pessoa) tabela[i].get(j);
 				if(pessoa.getNome().equals(aux.getNome())) {
-					JOptionPane.showMessageDialog(null, aux,"Removido",JOptionPane.INFORMATION_MESSAGE);;
+					JOptionPane.showMessageDialog(null, aux," Removido",JOptionPane.INFORMATION_MESSAGE);;
 					tabela[i].remove(j);
 				}else {
 					if(i==tamanho&&j==size) {
@@ -55,8 +55,7 @@ public class CadastroController implements ICadastroController {
 				Pessoa aux = new Pessoa();
 				aux=(Pessoa) tabela[i].get(j);
 				if(pessoa.getNome().equals(aux.getNome())){
-					JOptionPane.showMessageDialog(null, aux +" Cadastrado ","Busca pessoas",JOptionPane.INFORMATION_MESSAGE);
-					tabela[i].remove(j);
+					JOptionPane.showMessageDialog(null, aux +" Cadastrado ","Busca pessoas",JOptionPane.INFORMATION_MESSAGE);					
 				}else {
 					if(i==tamanho&&j==size) {
 						JOptionPane.showMessageDialog(null, " Pessoa não encontrada ","Busca pessoas",JOptionPane.INFORMATION_MESSAGE);
